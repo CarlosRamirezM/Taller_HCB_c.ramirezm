@@ -5,35 +5,88 @@
     <link rel="stylesheet" href="lib/style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
 
     <title>FC BARCELONA: CARLOS RAMIREZ BLOG</title>
   </head>
   <body>
-    <div class="row">
-      <h1> FC BARCELONA </h1>
+    <div class="row"> <!-- Primera fila mayor-->
+      <div class="col-5"> <!-- Primera columna: Imagen-->
       <img
-        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/51bfa5d0-c62e-44b3-aa87-ca3d9c127332/d93azr2-f5d2740c-b918-4cb0-b22d-61560ccef093.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTFiZmE1ZDAtYzYyZS00NGIzLWFhODctY2EzZDljMTI3MzMyXC9kOTNhenIyLWY1ZDI3NDBjLWI5MTgtNGNiMC1iMjJkLTYxNTYwY2NlZjA5My5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.T9BtljOnL2oz7clW0eJHHe6m2I65qx4itfCAefSoVkY"
+        src="data:image/png;base64,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"
       />
-    </div>
-    <div class="row">
-      <div class="col">
+      </div>
+      <div class="col-7" id = "subgrid"> <!-- Segunda columna: Sub-grid-->
+        <div class="row"> <!-- Primera fila menor: Header-->
+          <div class="col-8">FC BARCELONA</div>
+          <div class="col-4">☻</div>
+        </div> 
+        <div class="row"> <!-- Segunda fila menor: Sub-header-->
+          <div class="col-8">Más que un club</div>
+          <div class="col-4">☺</div>
+        </div>
+        <div class="row"> <!-- Tercera fila menor: Palabras-->
+          <div class="col-2">Pasion</div>
+          <div class="col-2">Amor</div>
+          <div class="col-2">Esfuerzo</div>
+          <div class="col-2">Apoyo</div>
+          <div class="col-2">Calidad</div>
+          <div class="col-2">Fraternidad</div>
+        </div>
+      </div>
+    </div>    
+    <div class="row"> <!-- Segunda fila mayor-->
+      <div class="col-8" id = "Historia"> <!-- Primera columna: Historia-->
         <h2> Historia </h2>
         <p>El 29 de noviembre 1899 Joan Gamper fundo el Fútbol Club Barcelona. En recuerdo a los colores del cantón suizo de donde era originario, Gamper escogió el azul y grana. Así nació un mito, el club donde jugaron Kubala, Suárez, Cruyff, Maradona y hoy Ronaldinho. El "Barça" a lo largo del siglo XX se ha convertido en un símbolo de Barcelona y Cataluña, en donde los catalanes han proyectado su identidad como nación. Por esta razón decimos que el "Barça" es más que un club.</p>
           <a href="https://www.barcelona.com/es/entradas/entradas_fc_barcelona/historia_del_fc_barcelona">Leer más</a>
       </div>
-      <div class="col">
-        <h2> Titulos </h2>
+      <div class="col-4" id = "Titulos"> <!-- Segunda columna: Titulos-->
+        <div class="row"> <!-- Primera fila menor: Titulo "Titulos"-->
+         <h2> Titulos </h2>
+        </div>
+        <div class="row"> <!-- Segunda fila menor: Listas-->
+         <div class="col-6"> <!-- Primera columna menor: Nacionales-->
+         <ul>
+           <li>26 Ligas.</li>
+           <li>30 Copas del Rey.</li>
+           <li>13 Supercopas de España.</li>
+           <li>2 Copas de Liga.</li>
+         </ul>
+         </div>
+         <div class="col-6"> <!-- Primera columna menor: Internacionales-->
+         <ul>
+           <li>5 Champions League/ Copas de Europa</li>
+           <li>3 Mundiales de Clubes</li>
+           <li>5 Supercopas de Europa.</li>
+           <li>4 Recopas de Europa.</li>
+         </ul>
+         </div>
+        </div>
+      </div>
+    <div class="row"> <!-- Tercera fila mayor-->
+      <div class="col-4" id = "Estadisticas"> <!-- Primera columna: Estadisticas-->
+        <h2> Estadisticas de la Temporada (Liga) </h2>
         <ul>
-          <li>26 Ligas.</li>
-          <li>30 Copas del Rey.</li>
-          <li>13 Supercopas de España.</li>
-          <li>2 Copas de Liga.</li>
-          <li>5 Champions League/ Copas de Europa | Champions League (4) + Copas de Europa (1)</li>
-          <li>3 Mundiales de Clubes | Copa Intercontinental (0) + Mundial de Clubes -FIFA World Cup- (3)</li>
-          <li>5 Supercopas de Europa.</li>
-          <li>4 Recopas de Europa.</li>
+          <li>2.3 Goles por partido (68 en total)</li>
+          <li>0.8 Goles en contra por partido</li>
+          <li>65% de posesión</li>
+          <li>89% de precisión de pase</li>
+          <li>20531 Pases</li>
         </ul>
       </div>
-    </div>
+      <div class="col-8" id = "Desempeño"> <!-- Primera columna: Desempeño-->
+        <div class="row"> <!-- Primera fila menor-->
+        <div class="col-12">
+        <h2> Desempeño en la temporada </h2>
+        <p>Actualmente el FC Barcelona es segundo en La Liga, con una suma de 65 puntos en 29 partidos, a 1 punto del lider. El equipo disputará la final de la Copa del Rey 2021 en 17 de abril contra el Athletic de Bilbao. Fue eliminado de la Champions League por el PSG a pesar de haber hecho una increible actuación en el partido de vuelta </p>
+        </div>
+        <div class="row"> <!-- Segunda fila menor-->
+          <p>El FC Barcelona disputará el clásico el próximo sábado 10 de Abril, partido crucial para disputar el titulo de La Liga.</p>
+        </div>
+      </div>
+    </div>    
   </body>
 </html>

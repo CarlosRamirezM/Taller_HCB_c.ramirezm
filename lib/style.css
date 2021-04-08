@@ -1,18 +1,25 @@
 body {
-  background-color:  gainsboro;
+  background-color:  aliceblue;
 }
 
-.col {
-  border-color: #AA0000; 
-  border-style: solid;
-  position: relative;
-  left : 100px;
-  width: 220px;
-  display: inline-block;
-  background-color: lightblue;
-  margin : 10px 
+#subgrid{
+  background-color:  cadetblue;
 }
 
-h1 {
-  color : rgb(200, 0, 0)
+#Historia {
+  background-color:  aliceblue;
+}
+
+#Titulos{
+  background-color:  rgb(100,0,0);
+  color:  white;
+}
+
+#Estadisticas{
+  background-color:  rgb(100,0,0);
+  color:  white;
+}
+
+#Desempeño {
+  background-color:  aliceblue;
 }
